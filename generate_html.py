@@ -24,7 +24,6 @@ for i in messages:
 
     f.write(contents)
     f.close()
-    # print("---")
-    # print(i["name"])
-    # print(i["message"])
     print("done")
+
+
