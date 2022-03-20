@@ -17,7 +17,7 @@ random.shuffle(images)
 
 for i, msg in enumerate(messages):
     name, message = msg["name"], msg["message"]
-    img_path = join(images_path , images[i])
+    img_path = join(images_path, images[i])
 
     f = open(name + ".html", "w")
 
@@ -42,7 +42,7 @@ for i, msg in enumerate(messages):
                 {message}
             </div>
             <div class="back">
-                <a class="backA" href="./index.html">Back</a>
+                <a class="backA" href="./">Back</a>
             </div>
             <div style="padding-top: 30px;">
             <img src="{img_path}" width="100%">
