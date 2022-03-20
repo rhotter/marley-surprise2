@@ -24,6 +24,6 @@ for i in messages:
 
     f.write(contents)
     f.close()
-    print("done")
+    print("done writing {}.html".format(name))
 
 
