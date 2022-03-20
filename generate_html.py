@@ -17,6 +17,8 @@ random.shuffle(images)
 
 for i, msg in enumerate(messages):
     name, message = msg["name"], msg["message"]
+    img_path = join(images_path , images[i])
+
     f = open(name + ".html", "w")
 
     contents = f"""<!DOCTYPE html>
@@ -30,7 +32,7 @@ for i, msg in enumerate(messages):
     </head>
     <body>
         <div class="container-sm">
-
+            
             <h1 class="name">
                 <span class="highlight">
                 {name}
@@ -43,7 +45,8 @@ for i, msg in enumerate(messages):
                 <a class="backA" href="./index.html">Back</a>
             </div>
             <div style="padding-top: 30px;">
-            <img src="images/{images[i]}" width="100%">
+            <img src="{img_path}" width="100%">
+            </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
