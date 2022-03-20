@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto&display=swap");
+h1 {
+  font-family: "Lora", serif;
+  padding-bottom: 10px;
+}
+
+.highlight {
+  background-color: rgb(255, 243, 133);
+  border-radius: 15px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgb(33, 37, 41);
+  line-height: 1.5;
+}
+
+.container-sm {
+  padding-top: 50px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.back {
+  padding-top: 30px;
+}
+
+.backA {
+  text-decoration: none;
+  color: #795f0b;
+}
